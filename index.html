@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niraj Kumar Rai — Software Developer</title>
+  <meta name="description" content="Portfolio of Niraj Kumar Rai, a software developer building clean, functional web experiences.">
+
+  <!-- Fonts: Instrument Sans for UI/body, Newsreader for editorial serif accents -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,300..700;1,300..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background decorative layout grid lines -->
+  <div class="layout-grid" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Star particle canvas -->
+  <canvas id="star-canvas" aria-hidden="true"></canvas>
+
+  <!-- Background noise texture grain overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Interactive background spotlight glow tracker -->
+  <div class="interactive-glow" aria-hidden="true"></div>
+
+
+  <!-- Coloured cursor trail canvas -->
+  <canvas id="trail-canvas" aria-hidden="true"></canvas>
+
+  <!-- Custom cursor follower -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+
+  <!-- ======================= NAVBAR ======================= -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#top" class="logo">
+        Niraj Kumar Rai
+        <span class="logo__title">Software Developer</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Get in touch</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+
+        <div class="hero__header">
+          <h1 class="hero__title">
+            Developer based in <span class="serif-italic">Ranchi</span>.<br>
+            Shaping clean, functional websites and digital systems.
+          </h1>
+          <p class="hero__subtitle">
+            Hi, I'm Niraj. An engineering undergrad coding interfaces with a focus on simplicity, responsiveness, and clean codebase layout.
+          </p>
+        </div>
+
+        <div class="hero__meta-box">
+          <dl class="hero__details">
+            <div>
+              <dt>Based</dt>
+              <dd>Ranchi, India</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Software Development</dd>
+            </div>
+            <div>
+              <dt>Languages</dt>
+              <dd>English, Hindi</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd class="status-value">
+                <span class="status-dot"></span>
+                Open for freelance work
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__actions">
+          <a href="#work" class="btn btn--primary">View work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================= FEATURED PROJECTS ======================= -->
+    <section class="work" id="work">
+      <div class="container">
+        <h2 class="section-title"> A closer look at the work i've helped shape</h2>
+
+        <div class="project-grid">
+
+          <!-- PROJECT CARD 1 -->
+          <article class="project-card">
+            <a href="https://github.com/blackhatropus" target="_blank" rel="noopener" class="project-card__inner">
+              <div class="project-card__thumb"><span>01</span></div>
+              <div class="project-card__caption">
+                <div class="project-card__header">
+                  <span class="project-card__title">Project coming soon</span>
+                  <span class="project-card__year">2026</span>
+                </div>
+                <p class="project-card__desc">A web application built to solve a specific, real-world user problem with clarity and speed.</p>
+                <div class="tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- PROJECT CARD 2 -->
+          <article class="project-card">
+            <a href="https://github.com/blackhatropus" target="_blank" rel="noopener" class="project-card__inner">
+              <div class="project-card__thumb"><span>02</span></div>
+              <div class="project-card__caption">
+                <div class="project-card__header">
+                  <span class="project-card__title">Project coming soon</span>
+                  <span class="project-card__year">2026</span>
+                </div>
+                <p class="project-card__desc">Name the project and explain what it does and what problem it solves in one sentence.</p>
+                <div class="tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">API</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- PROJECT CARD 3 -->
+          <article class="project-card">
+            <a href="https://github.com/blackhatropus" target="_blank" rel="noopener" class="project-card__inner">
+              <div class="project-card__thumb"><span>03</span></div>
+              <div class="project-card__caption">
+                <div class="project-card__header">
+                  <span class="project-card__title">Project coming soon</span>
+                  <span class="project-card__year">2026</span>
+                </div>
+                <p class="project-card__desc">Name the project and explain what it does and what problem it solves in one sentence.</p>
+                <div class="tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JS</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SKILLS / TECH STACK ======================= -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">What I work with</h2>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">C++</span>
+              <span class="tag">Python</span>
+              <span class="tag">C</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Currently learning</h3>
+            <div class="tags">
+              <span class="tag tag--learning">DSA</span>
+              <span class="tag tag--learning">Full-stack Dev</span>
+              <span class="tag tag--learning">Machine Learning</span>
+              <span class="tag tag--learning">LLM Training</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <div class="tags">
+              <span class="tag">Git</span>
+              <span class="tag">VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ACHIEVEMENTS ======================= -->
+    <section class="achievements" id="achievements">
+      <div class="container">
+        <h2 class="section-title">Things I'm proud of</h2>
+
+        <div class="achievements-grid">
+
+          <article class="achievement-card">
+            <span class="achievement-card__tag">Hackathon</span>
+            <h3>Smart India Hackathon 2025</h3>
+            <p>Shortlisted as a finalist in SIH 2025, India's national-level hackathon.</p>
+          </article>
+
+          <article class="achievement-card">
+            <span class="achievement-card__tag">Competition</span>
+            <h3>State-Level Spell Bee</h3>
+            <p>Won the gold medal at the state-level Spell Bee competition.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ABOUT ======================= -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__photo">
+          <img src="20260209_135413.jpg" alt="Niraj Rai">
+        </div>
+
+        <div class="about__text">
+          <h2 class="section-title">A short bio</h2>
+          <p class="about__bio">
+            I'm <span class="accent-bold">Niraj</span>, an engineering undergrad who's obsessed with
+            travelling, tech, philosophy, storytelling and building things on the internet, with a confirmed case of <span class="serif-italic">multiple hobby syndrome</span>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CONTACT CTA ======================= -->
+    <section class="contact" id="contact">
+      <div class="container contact__inner">
+        <h2 class="section-title">Have a project in mind?<br><span class="serif-italic">Let's talk.</span></h2>
+        <p class="contact__text">
+          Have a project, an opportunity, or just want to say hi? My inbox is open.
+        </p>
+        <!-- Email -->
+        <a href="mailto:nirajxraii@gmail.com" class="contact__email">
+          nirajxraii@gmail.com
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Designed and built by <span class="accent-bold">Niraj Kumar Rai</span></p>
+
+      <div class="footer__socials">
+        <a href="https://github.com/blackhatropus" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/niraj-kumar-rai-a13308243/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/nirajraiii" target="_blank" rel="noopener">Instagram</a>
+      </div>
+
+      <p class="footer__meta">&copy; 2026 Niraj Rai. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
